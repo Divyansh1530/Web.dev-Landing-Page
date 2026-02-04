@@ -27,7 +27,7 @@ const Navbar = () => {
             </a>
           </div>
            
-            <button className="bg-[#49AD09] text-white px-12 py-4 rounded-sm font-light transition-colors duration-200 text-[18px]
+            <button className="bg-[#49AD09] text-white px-12 py-4 rounded-sm font-medium transition-colors duration-200 text-[18px]
              shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]">
               Sign up
             </button>

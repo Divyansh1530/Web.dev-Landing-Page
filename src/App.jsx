@@ -7,7 +7,7 @@ import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer&CTA'
 
-// Fonts
+
 import '@fontsource/inter'
 import '@fontsource/inter/300.css'
 import '@fontsource/inter/400.css'
