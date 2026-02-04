@@ -6,7 +6,6 @@ import Shopify from '../assets/Shopify.png'
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    /* w-full max-w-sm ensures cards don't get too wide, keeping them close */
     <div
   className="group bg-white p-8 rounded-md border border-gray-100 shadow-[0_8px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.25)] transition-all duration-300 ease-out flex flex-col items-start w-full max-w-sm min-h-75">
       <div className="flex items-center gap-4 mb-4">
