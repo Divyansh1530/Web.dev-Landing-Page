@@ -63,7 +63,7 @@ const Specialization = () => {
   ];
 
   return (
-    <section className="bg-white py-20 px-6 sm:py-32">
+    <section id='services' className="bg-white py-20 px-6 sm:py-32">
       <div className="max-w-200 mx-auto flex flex-col items-center">
         <div className='text-[20px] mb-10 mt-20 text-[#514140]'>
           What we do?
@@ -85,9 +85,9 @@ const Specialization = () => {
 
       </div>
       <div className="mt-22 flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button className="bg-[#49AD09] text-white text-lg px-18 py-4 rounded-md shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]">
+          <a href="#" className="bg-[#49AD09] text-white text-lg px-18 py-4 rounded-md shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]">
             Learn More
-          </button>
+          </a>
           </div>
     </section>
   );

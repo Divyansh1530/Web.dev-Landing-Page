@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'motion/react'
 import leftImage1 from '../assets/Rectangle 382.png'
 import leftImage2 from '../assets/Rectangle 383.png'
 import leftImage3 from '../assets/Mask Group.png'
@@ -10,14 +11,27 @@ import rightRectangle1 from '../assets/Rectangle 387.png'
 import rightRectangle2 from '../assets/Rectangle 388.png'
 import whiteBlank from '../assets/Rectangle 389.png'
 
+const floatAnimation = {
+  animate: {
+    y: [0, -12, 0],
+  },
+  transition: {
+    duration: 6,
+    repeat: Infinity,
+    ease: 'easeInOut',
+  },
+};
+
 
 const HeroWithGraphics = () => {
   return (
-    <section className=''>
+    <section id='home'>
     <div className="relative w-full font-['Inter',sans-serif] min-h-200 mt-5 pt-24 z-30 bg-neutral-100 overflow-hidden flex items-center justify-center">
       
 
-      <div
+      <motion.div
+  {...floatAnimation}
+  transition={{ ...floatAnimation.transition, duration: 3 }}
   className="
     absolute left-0 top-90 -translate-y-1/2
     w-1/3 h-full
@@ -26,10 +40,9 @@ const HeroWithGraphics = () => {
     lg:scale-[0.9]
     xl:scale-100
     origin-left
-    transition-transform duration-300
-
   "
 >
+
 
 
         
@@ -49,10 +62,10 @@ const HeroWithGraphics = () => {
         <div className="absolute top-[70%] left-[4%] w-40 h-42 bg-white border border-gray-100 z-10 overflow-hidden">
           <img src={leftImage1} alt="Project 3" className="w-full h-full object-cover" />
         </div>
-      </div>
+      </motion.div>
 
       
-    <div className="max-w-4xl w-full flex flex-col items-center text-center -translate-y-20">
+    <div className="max-w-4xl w-full flex flex-col items-center text-center -translate-y-32 md:-translate-y-20">
 
         
         
@@ -70,12 +83,13 @@ const HeroWithGraphics = () => {
         </p>
 
         
-        <div className="mt-15 flex flex-col sm:flex-row items-center justify-center gap-8">
+        <div className="mt-15 flex flex-col sm:flex-row items-center justify-center md:gap-8 gap-20">
 
-          <button
+          <a
+          href='#contact'
           className=" relative z-0 bg-[#49AD09] text-white text-lg px-18 py-4 rounded-md shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]">
           Contact Us
-          </button>
+          </a>
 
 
 
@@ -99,7 +113,9 @@ const HeroWithGraphics = () => {
 
 
 
-     <div
+     <motion.div
+  {...floatAnimation}
+  transition={{ ...floatAnimation.transition, duration:5}}
   className="
     absolute right-0 top-1/2 -translate-y-1/2
     w-1/3 h-full
@@ -108,10 +124,9 @@ const HeroWithGraphics = () => {
     lg:scale-[0.9]
     xl:scale-100
     origin-right
-    transition-transform duration-300
-
   "
 >
+
 
         <img src={rightRectangle1} className="absolute right-10 top-[15%] w-40 h-90 z-0" />
         <img src={rightRectangle2} className="absolute right-29 top-[47%] w-31 h-82 z-0 rotate-90" />
@@ -135,7 +150,7 @@ const HeroWithGraphics = () => {
         </div>
 
         
-      </div>
+      </motion.div>
     
      
      

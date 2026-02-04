@@ -13,11 +13,11 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="bg-white py-10 px-6 sm:py-10 font-['Inter',sans-serif]">
+    <section id='portfolio' className="bg-white py-10 px-6 sm:py-10 font-['Inter',sans-serif]">
       <div className="max-w-6xl mx-auto">
         
         
-        <div className="text-center sm:mb-40 mb-20"> {/* Increased margin to account for upward shift */}
+        <div className="text-center sm:mb-40 mb-20"> 
           <span className="text-[18px] font-medium text-[#514140]">
             Our Work
           </span>
@@ -29,7 +29,7 @@ const Portfolio = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 items-start">
           {projects.map((project, index) => {
-            // Check if item is in the left column (Index 0 and 2)
+
             const isElevated = index % 2 === 0;
 
             return (
@@ -39,7 +39,7 @@ const Portfolio = () => {
                   isElevated ? 'md:-mt-20' : 'md:mt-0'
                 }`}
               >
-                {/* Image Container */}
+                
                 <div className="w-full h-80 md:h-112.5 bg-gray-100 rounded-2xl overflow-hidden shadow-sm transition-all duration-500 group-hover:shadow-xl">
                   <img 
                     src={project.image} 
@@ -52,14 +52,14 @@ const Portfolio = () => {
                 <div className="mt-6 flex justify-between items-end">
                   <div className="flex flex-col">
                     
-                    <h3 className="text-[28px] font-medium text-gray-900 leading-tight">
+                    <h3 className="text-[22px] md:text-[28px] font-medium text-gray-900 leading-tight">
                       {project.title}
                     </h3>
                   </div>
 
                   <a 
                     href="#" 
-                    className="text-lg font-medium text-green-600 hover:text-green-700 underline underline-offset-4 decoration-transparent hover:decoration-green-600 transition-all duration-200"
+                    className="text-sm md:text-lg font-medium text-green-600 hover:text-green-700 underline underline-offset-4 decoration-transparent hover:decoration-green-600 transition-all duration-200"
                   >
                     View Details
                   </a>
@@ -72,9 +72,11 @@ const Portfolio = () => {
       </div>
       <div className="mt-22 flex flex-col sm:flex-row items-center justify-center gap-6">
 
-          <button className="bg-[#49AD09] text-white text-lg px-18 py-4 rounded-md shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]">
+          <a
+          href="#"
+          className="bg-[#49AD09] text-white text-lg px-13 py-3 md:px-18 md:py-4 rounded-md shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]">
             All Projects
-          </button>
+          </a>
           </div>
     </section>
   );

@@ -4,15 +4,17 @@ const Footer = () => {
   return (
     <div className="bg-white font-['Inter',sans-serif]">
       
-      <section className="py-32 px-6 flex flex-col items-center justify-center text-center">
-        <h2 className="text-5xl md:text-5xl font-normal text-[#313131] tracking-tight leading-tight">
+      <section id='contact' className="py-32 px-6 flex flex-col items-center justify-center text-center">
+        <h2 className="text-4xl md:text-5xl font-normal text-[#313131] tracking-tight leading-tight">
           Need a little more <br />
           home to grow?
         </h2>
-        <button className="mt-12 bg-[#4fb218] text-white px-20 py-4 rounded-md font-normal shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]
+        <a 
+        href='#contact'
+        className="mt-12 bg-[#4fb218] text-white px-13 py-3 md:px-20 md:py-4 rounded-md font-normal shadow-[0_46px_22px_5px_rgba(0,0,0,0.1)]
  text-lg">
           Contact Us
-        </button>
+        </a>
       </section>
 
 

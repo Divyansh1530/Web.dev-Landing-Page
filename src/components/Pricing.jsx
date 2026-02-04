@@ -10,13 +10,13 @@ const PricingCard = ({ title, price, features, buttonText, isPrimary }) => {
       }`}
     >
       
-      <h3 className="text-3xl font-semibold text-gray-800 text-center mb-6">
+      <h3 className="text-xl md:text-3xl font-semibold text-gray-800 text-center mb-6">
         {title}
       </h3>
       
       
       <div className="text-center mb-10">
-        <span className="text-6xl font-bold text-gray-800">
+        <span className="text-[45px] md:text-6xl font-bold text-gray-800">
           {price === "Custom" ? "" : "$"}
           {price}
         </span>
@@ -94,15 +94,15 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="bg-white py-24 px-6 relative overflow-hidden">
+    <section id='pricing' className="bg-white py-24 px-6 relative overflow-hidden">
       
       <div className="hidden lg:block absolute -left-5 top-1/2 w-16 h-16 border border-gray-300 rotate-45 -z-10" />
 
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-24">
-          <p className="text-[#514140] text-[19px] mb-8">Pricing</p>
-          <h2 className="text-5xl font-normal text-[#313131] tracking-tight">
+          <p className="text-[#514140] text-[17px] md:text-[19px] mb-8">Pricing</p>
+          <h2 className="text-4xl md:text-5xl font-normal text-[#313131] tracking-tight">
             Pricing Policy
           </h2>
         </div>
